@@ -7,11 +7,11 @@ import React from 'react'
 // ①函数名必须是首字母大写
 // ②该函数必须要有返回值，可以是null或者jsx
 // ③返回的jsx必须要有一个根元素包裹
-function Hello() {
+function Hello(props) {
     return (<ul>
-        <li>这里是函数式组件</li>
-        <li>这里是函数式组件</li>
-        <li>这里是函数式组件</li>
+        <li>这里是函数式组件{props.num + 1}</li>
+        <li>这里是函数式组件{props.num + 2}</li>
+        <li>这里是函数式组件{props.num + 3}</li>
     </ul>)
 }
 
